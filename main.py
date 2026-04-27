@@ -3,11 +3,11 @@ from flask import Flask, request
 import requests
 
 # Telegram setup
-TOKEN = os.environ.get("8599755405:AAFVFsNyXUFcLKMWFXJ1T9ulNkGV3mIlGKM")
+TOKEN = os.environ.get("BOT_TOKEN")
 URL = f"https://api.telegram.org/bot{TOKEN}"
 
 # Hugging Face setup
-HF_TOKEN = os.environ.get("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")
+HF_TOKEN = os.environ.get("HF_TOKEN")
 HF_API_URL = "https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct"
 
 headers = {
